@@ -1,0 +1,949 @@
+Initializing packrat project in directory:
+- "/lustre03/project/6004655/COMMUN/runs/eyu8/library/ExomeDepth"
+Initialization complete!
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1     ✔ purrr   0.3.2
+✔ tibble  2.1.2     ✔ dplyr   0.8.1
+✔ tidyr   0.8.3     ✔ stringr 1.4.0
+✔ readr   1.3.1     ✔ forcats 0.4.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: ‘glue’
+
+The following object is masked from ‘package:dplyr’:
+
+    collapse
+
+Parsed with column specification:
+cols(
+  Sample = col_character(),
+  type = col_character(),
+  chr = col_double()
+)
+Sample number: MIP.S06087.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.98137
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 6 : 1
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S06128.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.98091
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 6 : 1
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S06163.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.98146
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 6 : 1
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S20936.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:7
+Correlation between reference and tests count is 0.9833
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 2
+Number of calls for chromosome 6 : 1
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S27094.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.98662
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 6 : 1
+Plotting the gene data
+Sample number: MIP.S29943.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.90055
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Sample number: MIP.S29972.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.98587
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 6 : 1
+Plotting the gene data
+Sample number: MIP.S34223.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:1
+Correlation between reference and tests count is 0.94497
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 6 : 1
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S35319.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.96989
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 6 : 1
+Plotting the gene data
+There were 50 or more warnings (use warnings() to see the first 50)
+Sample number: MIP.S20614.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.96342
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 12 : 1
+Number of calls for chromosome 16 : 1
+Plotting the gene data
+Sample number: MIP.S20654.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.95951
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 1
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S20930.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:17
+Correlation between reference and tests count is 0.9861
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Number of calls for chromosome 3 : 1
+Plotting the gene data
+Sample number: MIP.S20945.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:11
+Correlation between reference and tests count is 0.98593
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S20946.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.97357
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S20947.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:5
+Correlation between reference and tests count is 0.95981
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S20963.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.97544
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S20968.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:11
+Correlation between reference and tests count is 0.98106
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Number of calls for chromosome 3 : 1
+Plotting the gene data
+Sample number: MIP.S27095.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:5
+Correlation between reference and tests count is 0.99193
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Plotting the gene data
+Sample number: MIP.S27100.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.99104
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S27115.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:5
+Correlation between reference and tests count is 0.98747
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Plotting the gene data
+Sample number: MIP.S29241.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.95112
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S29242.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:9
+Correlation between reference and tests count is 0.96165
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S29244.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.95352
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 2
+Plotting the gene data
+Sample number: MIP.S29245.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:21
+Correlation between reference and tests count is 0.96234
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 10 : 2
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S29255.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.94976
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 4 : 1
+Number of calls for chromosome 10 : 2
+Number of calls for chromosome 12 : 1
+Plotting the gene data
+Sample number: MIP.S29750.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:10
+Correlation between reference and tests count is 0.92973
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 2
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S29753.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.95152
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S29764.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:14
+Correlation between reference and tests count is 0.98483
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S29776.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.98697
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Plotting the gene data
+Sample number: MIP.S29800.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.98226
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 4 : 1
+Plotting the gene data
+Sample number: MIP.S29811.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.96719
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 1
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S29824.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.98527
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Plotting the gene data
+Sample number: MIP.S29826.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:7
+Correlation between reference and tests count is 0.98205
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S29827.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.98576
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 1
+Plotting the gene data
+Sample number: MIP.S29828.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:8
+Correlation between reference and tests count is 0.98715
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 1
+Number of calls for chromosome 3 : 1
+Plotting the gene data
+Sample number: MIP.S29840.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:5
+Correlation between reference and tests count is 0.98915
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 1
+Plotting the gene data
+Sample number: MIP.S29931.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:6
+Correlation between reference and tests count is 0.7805
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S29935.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.899
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S29942.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:6
+Correlation between reference and tests count is 0.89628
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 1
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 4 : 1
+Plotting the gene data
+Sample number: MIP.S29946.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.98288
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Plotting the gene data
+Sample number: MIP.S34089.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.99094
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 2
+Plotting the gene data
+Sample number: MIP.S34111.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:16
+Correlation between reference and tests count is 0.98155
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S34113.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.8924
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S34117.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:6
+Correlation between reference and tests count is 0.99055
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S34118.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.98643
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S34119.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:5
+Correlation between reference and tests count is 0.99045
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Plotting the gene data
+Sample number: MIP.S34140.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.97239
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 2
+Plotting the gene data
+Sample number: MIP.S34158.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:6
+Correlation between reference and tests count is 0.9829
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S34172.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:23
+Correlation between reference and tests count is 0.98382
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 2
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S34186.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.94408
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S34194.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.99009
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 18 : 1
+Plotting the gene data
+Sample number: MIP.S34198.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:6
+Correlation between reference and tests count is 0.98779
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 2
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S34204.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:13
+Correlation between reference and tests count is 0.98218
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S34205.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:12
+Correlation between reference and tests count is 0.99273
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S34230.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.98726
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S34231.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:21
+Correlation between reference and tests count is 0.99033
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S34238.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.99124
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S34248.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:18
+Correlation between reference and tests count is 0.99223
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 2
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S34249.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:16
+Correlation between reference and tests count is 0.99169
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S34253.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:12
+Correlation between reference and tests count is 0.98563
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 1
+Plotting the gene data
+Sample number: MIP.S35141.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.98534
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S35144.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:1
+Correlation between reference and tests count is 0.98058
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S35146.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.97097
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S35157.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.96724
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S35158.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.9617
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Plotting the gene data
+Sample number: MIP.S35160.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.98467
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S35167.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:11
+Correlation between reference and tests count is 0.97433
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S35176.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:14
+Correlation between reference and tests count is 0.96868
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S35178.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:9
+Correlation between reference and tests count is 0.97316
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S35207.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.96213
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 4 : 1
+Number of calls for chromosome 16 : 2
+Number of calls for chromosome 18 : 1
+Plotting the gene data
+Sample number: MIP.S35218.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.95634
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 2
+Plotting the gene data
+Sample number: MIP.S35234.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.9557
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 4 : 1
+Number of calls for chromosome 16 : 1
+Plotting the gene data
+Sample number: MIP.S35253.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:3
+Correlation between reference and tests count is 0.95864
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 2
+Number of calls for chromosome 22 : 1
+Plotting the gene data
+Sample number: MIP.S35257.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:9
+Correlation between reference and tests count is 0.98671
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Plotting the gene data
+Sample number: MIP.S35281.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.98282
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S35290.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:1
+Correlation between reference and tests count is 0.98099
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Number of calls for chromosome 10 : 2
+Plotting the gene data
+Sample number: MIP.S35295.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:1
+Correlation between reference and tests count is 0.94785
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S35298.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:4
+Correlation between reference and tests count is 0.98332
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S35299.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:2
+Correlation between reference and tests count is 0.98483
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+Sample number: MIP.S35312.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:16
+Correlation between reference and tests count is 0.98831
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 2
+Plotting the gene data
+Sample number: MIP.S35327.clean.bam
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 874
+Now creating the ExomeDepth object
+Now fitting the beta-binomial model on a data frame with 973 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Reference for this samples:1
+Correlation between reference and tests count is 0.98217
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Plotting the gene data
+There were 50 or more warnings (use warnings() to see the first 50)
+FPR=0

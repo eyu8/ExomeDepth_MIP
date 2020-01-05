@@ -2,7 +2,7 @@
 
 
 packrat::init("~/runs/eyu8/library/ExomeDepth")
-setwd("~/runs/eyu8/data/ExomeDepth")
+setwd("~/runs/eyu8/data/CNV/ExomeDepth")
 
 library(ExomeDepth)
 library(readr)

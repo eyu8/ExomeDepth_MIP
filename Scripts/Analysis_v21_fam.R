@@ -2,7 +2,7 @@
 
 #load required library
 packrat::init("~/runs/eyu8/library/ExomeDepth")
-setwd("~/runs/eyu8/data/ExomeDepth")
+setwd("~/runs/eyu8/data/CNV/ExomeDepth")
 
 library(ExomeDepth)
 library(tidyverse)
@@ -14,14 +14,14 @@ library(parallel)
 ncore <- 40
 
 #list of duplicates
-duplicates <- readLines("../MIP/txt/data/NeuroX_duplicate_v3.data")
+duplicates <- readLines("../../MIP/txt/data/NeuroX_duplicate_v3.data")
 duplicates <- paste0('MIP.',duplicates,'.clean.bam',sep='')
 
 #list of probe with low coverage (<100x)
-badProbes <- readLines("../MIP/txt/cov/bad_probe.cov")
+badProbes <- readLines("../../MIP/txt/cov/bad_probe.cov")
 
 #list of gene with good coverage (100x in at least 85% of the gene)
-good_gene <- paste(readLines("../MIP/txt/cov/good_gene_above_90_vps35.cov"),collapse="|")
+good_gene <- paste(readLines("../../MIP/txt/cov/good_gene_above_90_vps35.cov"),collapse="|")
 
 #load read count of all PD samples
 pd_number <- c("pd_15","pd_19","pd_22","pd_26","pd_28","pd_55","pd_65","pd_71","pd_76")

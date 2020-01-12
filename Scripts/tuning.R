@@ -2,7 +2,7 @@
 
 
 packrat::init("~/runs/eyu8/library/ExomeDepth")
-setwd("~/runs/eyu8/data/ExomeDepth")
+setwd("~/runs/eyu8/data/CNV/ExomeDepth")
 
 library(ExomeDepth)
 library(readr)
@@ -16,9 +16,9 @@ transition.probability <- args[2]
 version <- args[3]
 core <- args[4]
 
-duplicates <- readLines("../MIP/txt/data/NeuroX_duplicate_v3.data")
+duplicates <- readLines("../../MIP/txt/data/NeuroX_duplicate_v3.data")
 duplicates <- paste0('MIP.',duplicates,'.clean.bam',sep='')
-badProbes <- readLines("../MIP/txt/cov/bad_probe.cov")
+badProbes <- readLines("../../MIP/txt/cov/bad_probe.cov")
 #badProbes <- c()
 
 #poorSamples <- readLines("../MIP/txt/files/PARK2_bad.csv")
@@ -27,7 +27,7 @@ badProbes <- readLines("../MIP/txt/cov/bad_probe.cov")
 MLPA_cnv <- paste0('MIP.',readLines("txt/MLPA_cnv"),'.clean.bam',sep='')
 MLPA_wild <- paste0('MIP.',readLines("txt/MLPA_wild"),'.clean.bam',sep='')
 
-good_gene <- paste(readLines("../MIP/txt/cov/good_gene_above_90_vps35.cov"),collapse="|")
+good_gene <- paste(readLines("../../MIP/txt/cov/good_gene_above_90_vps35.cov"),collapse="|")
 
 ctrl_number <- c("control_19","control_22","control_26","control_28","control_55","control_65","control_71","control_76")
 ctrl <- lapply(ctrl_number, function(x)readRDS(paste("raw/",x,"_all.rds",sep="")))

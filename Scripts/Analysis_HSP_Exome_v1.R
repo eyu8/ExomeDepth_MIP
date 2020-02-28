@@ -2,7 +2,7 @@
 
 
 packrat::init("~/runs/eyu8/library/ExomeDepth")
-setwd("~/runs/eyu8/data/ExomeDepth")
+setwd("~/runs/eyu8/data/CNV/ExomeDepth")
 
 
 library(ExomeDepth)
@@ -10,7 +10,7 @@ library(parallel)
 
 ncore <- 40
 
-unrelated <- paste0("Exome.",as.character(readLines("~/runs/eyu8/QC_cryptic_HSP_controls/HSP_unrelated.csv")),".clean.dedup.recal.bam")
+unrelated <- paste0("Exome.",as.character(readLines("~/runs/eyu8/QC_NeuroX/QC_cryptic_HSP_controls/HSP_unrelated.csv")),".clean.dedup.recal.bam")
 hsp <- readRDS("raw/HSP_case_all_v3.rds")
 
 ctrl.raw <- readRDS("raw/HSP_control_all_v3.rds")

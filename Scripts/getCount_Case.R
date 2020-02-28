@@ -14,8 +14,8 @@ bed <- "original.targets_only.sorted.bed"
 #reference file
 fasta <- "/home/eyu8/Reference/human_g1k_v37.fasta" 
 #list of pd batches
-pd <- c("pd_15","pd_19","pd_22","pd_26","pd_28","pd_55","pd_65","pd_71","pd_76")
-
+#pd <- c("pd_15","pd_19","pd_22","pd_26","pd_28","pd_55","pd_65","pd_71","pd_76")
+pd <- c("pd_78")
 
 for(name in pd){
 

@@ -1,7 +1,7 @@
 #! /usr/bin/env Rscript
 
 packrat::init("~/runs/eyu8/library/ExomeDepth")
-setwd("~/runs/eyu8/data/ExomeDepth")
+setwd("~/runs/eyu8/data/CNV/ExomeDepth")
 
 library(ExomeDepth)
 
@@ -23,13 +23,10 @@ final_mip <- cbind(all_mips[,1:6],mip)
 probeMeanAll <- rowMeans(final_mip[,-c(1:6)])
 probeSDAll <- apply(final_mip[,-c(1:6)],1,sd)
 
-gene <- read.csv("../MIP/MIP_PD_library.bed", sep = "\t", stringsAsFactors = FALSE, header= FALSE )
+gene <- read.csv("../../MIP/MIP_PD_library.bed", sep = "\t", stringsAsFactors = FALSE, header= FALSE )
 names(gene) <- c("chr","start","end","gene")
 dp <- 100
-cov <- sapply(gene$gene,function(g){
-                  probeMean <- probeMeanAll[grep(final_mip$name, pattern = paste0(g,".*"))]
-                  percentCov <- 100 * length(which( probeMean > dp))/length(probeMean)                                            
-})
+cov <- sapply(gene$gene,function(g){probeMean <- probeMeanAll[grep(final_mip$name, pattern = paste0(g,".*"))] percentCov <- 100 * length(which( probeMean > dp))/length(probeMean)})
 
 probeMean.dafr <- data.frame("probe" = final_mip$name, "mean" = as.integer(probeMeanAll), "ratio" = probeSDAll/probeMeanAll)
 

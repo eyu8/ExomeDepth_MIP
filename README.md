@@ -1,4 +1,12 @@
-# ExomeDepth from MIPs for *PRKN*
+# ExomeDepth for Molecular Inversion Probes (MIPs) in the *PRKN* gene
+
+## Published papers
+
+ Papers published with release: 
+ - [ExomeDepth for MIPs v1.0.0](https://github.com/gan-orlab/ExomeDepth_MIP/releases/tag/v1.0.0)
+	> *Analysis of heterozygous PRKN variants and copy number variations in Parkinson’s disease.* Under review. 2020. Preprint available on medRxiv: DOI: https://doi.org/10.1101/2020.05.07.20072728
+	> *Analysis of dominant and recessive parkinsonism genes in REM sleep behavior disorder.* Under review. 2020. Preprint available on medRxiv: DOI: https://doi.org/10.1101/2020.03.17.20032664
+
 
 ## WORKFLOW 
 #### [1. Extract reads from MIPs](#1)

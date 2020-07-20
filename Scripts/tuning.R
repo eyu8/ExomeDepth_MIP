@@ -52,12 +52,12 @@ pd.bam <- pd.list[, c(1:6,grep(names(pd.list), pattern = '*.clean.bam'))]
 all.bam <- cbind(pd.bam,ctrl.bam)
 CNV_samples.dafr <- all.bam[ , (names(all.bam) %in% c(MLPA_cnv,colnames(all.bam)[1:6]))]
 noCNV_samples.dafr <- all.bam[ , (names(all.bam) %in% c(MLPA_wild,colnames(all.bam)[1:6]))]
-
+SNCA.dafr <- all.bam[ , (names(all.bam) %in% c("MIP.S33485.clean.bam","MIP.S33460.clean.bam",colnames(all.bam)[1:6]))]
 ### prepare the main matrix of read count data
 CNV_samples.mat <- as.matrix(CNV_samples.dafr[, grep(names(CNV_samples.dafr), pattern = '*.clean.bam')])
 noCNV_samples.mat <- as.matrix(noCNV_samples.dafr[, grep(names(noCNV_samples.dafr), pattern = '*.clean.bam')])
 reference.mat <- as.matrix(ctrl.ref[, grep(names(ctrl.ref), pattern = '*.clean.bam')])
-
+SNCA.mat <- noCNV_samples.mat[,colnames(noCNV_samples.mat) %in% c("MIP.S33485.clean.bam","MIP.S33460.clean.bam")]
 
 ### start looping over each sample
 getResult <- function(mat, dafr, nsamples,exp,tp,core){
@@ -97,44 +97,47 @@ getResult <- function(mat, dafr, nsamples,exp,tp,core){
         result$numRef = length(my.choice$reference.choice)
         result$ReferenceSet = paste(my.choice$reference.choice,collapse = ',')        
     }
+   if(colnames(mat)[i] == "MIP.S33485.clean.bam"){
    pdf(paste0(colnames(mat)[i],".pdf"))
    plot(all.exons,
-          sequence = '6',
-          #sequence = '4',
+          #sequence = '6',
+          sequence = '4',
           #sequence = '1',
-          #xlim = c(90645250 , 90759447),
-          xlim = c(161768590 , 163148834 ),
+          xlim = c(90645250 , 90759447),
+          #xlim = c(161768590 , 163148834 ),
           #xlim = c(20959948, 20978004),
           count.threshold = 20,
-          #main = 'SNCA',
+          main = 'SNCA deletion',
           #main = 'PINK1',
-          main = 'PARK2 gene',
+          #main = 'PARK2 gene',
           cex.lab = 0.8,
           with.gene = TRUE)
     dev.off()
+   }
     return(result)
 }, mc.cores=core)}
 
 
-CNV_result_MLPA <- as.data.frame(read_csv("txt/CNV_result_MLPA.csv"))
-resulttable <- getResult(CNV_samples.mat,CNV_samples.dafr,ncol(CNV_samples.mat),expected.CNV.length,transition.probability,core)
+#CNV_result_MLPA <- as.data.frame(read_csv("txt/CNV_result_MLPA.csv"))
+#resulttable <- getResult(CNV_samples.mat,CNV_samples.dafr,ncol(CNV_samples.mat),expected.CNV.length,transition.probability,core)
 ################################ 
-score_list <- lapply(resulttable, function(result){
-                         if(nrow(result) == 0){
-                             c(0,1)
-                         } else {
-                             MLPA <- CNV_result_MLPA[CNV_result_MLPA$Sample == substr(result$Sample,5,10)[1],]
-                             gene <- result[result$chromosome==MLPA$chr & result$start > MLPA$start & result$end < MLPA$end,]
-                             TP<- ifelse(nrow(gene) > 0, 1, 0)
-                             FN <- 1 - TP
-                             c(TP,FN)
-                         }
-})
+#score_list <- lapply(resulttable, function(result){
+#                         if(nrow(result) == 0){
+#                             c(0,1)
+#                         } else {
+#                             MLPA <- CNV_result_MLPA[CNV_result_MLPA$Sample == substr(result$Sample,5,10)[1],]
+#                             gene <- result[result$chromosome==MLPA$chr & result$start > MLPA$start & result$end < MLPA$end,]
+#                             TP<- ifelse(nrow(gene) > 0, 1, 0)
+#                             FN <- 1 - TP
+#                             c(TP,FN)
+#                         }
+#})
 
-s <- Reduce('+',score_list)
+#s <- Reduce('+',score_list)
 
+test <- getResult(SNCA.mat,SNCA.dafr,ncol(SNCA.mat),expected.CNV.length,transition.probability,core)
 MLPA_genes <- as.data.frame(read_csv("txt/PARK2_genes.csv"))
-resulttable <- getResult(noCNV_samples.mat,noCNV_samples.dafr,ncol(noCNV_samples.mat),expected.CNV.length,transition.probability,core)
+#resulttable <- getResult(noCNV_samples.mat,noCNV_samples.dafr,ncol(noCNV_samples.mat),expected.CNV.length,transition.probability,core)
 score_list <- lapply(resulttable, function(result){
                          if(nrow(result) == 0){
                              c(1,0)

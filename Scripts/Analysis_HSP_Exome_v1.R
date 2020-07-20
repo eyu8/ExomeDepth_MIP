@@ -15,10 +15,17 @@ hsp <- readRDS("raw/HSP_case_all_v3.rds")
 
 ctrl.raw <- readRDS("raw/HSP_control_all_v3.rds")
 ctrl.tmp <- ctrl.raw[,colnames(ctrl.raw) %in% c(colnames(ctrl.raw)[1:6],unrelated)]
-ctrl <- ctrl.tmp
+
+ctrl_wCNV <- paste0("Exome.",as.character(readLines("HSP/HSP_controls_with_CNV_nobias")),".clean.dedup.recal.bam")
+
+#no poor controls
+ctrl.tmp2 <- ctrl.tmp
+ctrl <-  ctrl.tmp2[, !(names(ctrl.tmp2) %in% ctrl_wCNV)]
+
 
 ### prepare the main matrix of read count data 
 hsp.mat <- as.matrix(hsp[, grep(names(hsp), pattern = 'Exome*')])
+ctrl.mat <- as.matrix(ctrl.tmp2[, grep(names(ctrl.tmp2), pattern = 'Exome*')])
 reference.mat <- as.matrix(ctrl[, grep(names(ctrl), pattern = 'Exome*')])
 
 
@@ -65,23 +72,24 @@ result <- mclapply(1:nsamples,
 saveRDS(result,"raw/HSP_result_v1_Exome.rds")
 
 
-nsamples <- ncol(reference.mat)
+nsamples <- ncol(ctrl.mat)
 result <- mclapply(1:nsamples,
                    function(i){
 
 ### Create the aggregate reference set for this sample
-                       my.choice <- select.reference.set (test.counts = reference.mat[,i],
-                                                          reference.counts = reference.mat[,-i],
-                                                          data = ctrl,
+                       ref.mat <- reference.mat[,!(colnames(reference.mat) %in% colnames(ctrl_wCNV.mat)[i])]
+                       my.choice <- select.reference.set (test.counts = ctrl.mat[,i],
+                                                          reference.counts = ref.mat,
+                                                          data = ctrl.tmp2,
                                                           formula = 'cbind(test, reference) ~ GC',
-                                                          bin.length = (ctrl$end - ctrl$start)/1000,
+                                                          bin.length = (ctrl.tmp2$end - ctrl.tmp2$start)/1000,
                                                           n.bins.reduced = 10000)
                        my.reference.selected <- apply(X = reference.mat[, my.choice$reference.choice, drop = FALSE],
                                                       MAR = 1,
                                                       FUN = sum)
                        message('Now creating the ExomeDepth object')
                        all.exons <- new('ExomeDepth',
-                                        test = reference.mat[,i],
+                                        test = ctrl.mat[,i],
                                         reference = my.reference.selected,
                                         data = ctrl,
                                         formula = 'cbind(test, reference) ~ GC')
@@ -89,14 +97,14 @@ result <- mclapply(1:nsamples,
 ############### Now call the CNVs
                        all.exons <- CallCNVs(x = all.exons,
                                              transition.probability = 10^-4,
-                                             chromosome = ctrl$space,
-                                             start = ctrl$start,
-                                             end = ctrl$end,
-                                             name = ctrl$names)
+                                             chromosome = ctrl.tmp2$space,
+                                             start = ctrl.tmp2$start,
+                                             end = ctrl.tmp2$end,
+                                             name = ctrl.tmp2$names)
                        result <- all.exons@CNV.calls
 
                        if(nrow(result)> 0){
-                           result$Sample = colnames(ctrl)[i+6]
+                           result$Sample = colnames(ctrl.tmp2)[i+6]
                            result$correlation = cor(all.exons@test, all.exons@reference)
                            result$numRef = length(my.choice$reference.choice)
                            result$ReferenceSet = paste(my.choice$reference.choice,collapse = ',')
